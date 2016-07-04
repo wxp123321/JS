@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>正则表达式.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+    <script type="text/javascript">
+       function test()
+       {
+         var val = document.getElementById("text1").innerText;
+         var myReg= new RegExp("(\\d)","gi");
+         var a = "1234";
+         while(arr=myReg.exec(a) != null)
+         {
+          alert(arr.length);
+         }
+       }
+    </script>
+  </head>
+  
+  <body>
+    <textarea rows="20" cols="30" id="text1"></textarea>
+    <input type="button" value="测试" onclick="test()"></input>
+  </body>
+</html>
